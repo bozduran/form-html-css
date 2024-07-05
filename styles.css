@@ -1,0 +1,39 @@
+
+/* Style for input field */
+input[type=text]{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+/* Style for submit button */
+input[type=button],input[type=submit]{
+    border-color: #0b88ba;
+    margin-top: 5px;
+    margin-left: 150px;
+    border-radius: 5px;
+    color: #0b88ba;
+}
+
+/* Style for number */
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+/* Styler for h1 here used for "Form" */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b88ba;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Form-style classes used to enclose the whole fomr + h1 text "Form" */
+
+.form-style{
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+}
+

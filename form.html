@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--- Externally loaded .css file  --->
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <!---  --->
+    <div class="form-style">
+        <!--- The blue form text as seen in the pdf--->
+        <h1>Form</h1>
+        <form>
+            <!--- Label for Number --->
+            <label for="number-field">Number</label><br>
+            <!--- Input for Number --->
+            <input type="text" id="number-field" placeholder="Please enter a number" name="number-f"><br>
+            <!--- Button to chek the number Number --->
+            <input type="submit" value="Submit" onclick="checkNumber()" >
+            <!--- JS code to check if the number --->
+            <script>
+                function checkNumber() {
+                    let input_number = Number(document.getElementById('number-field').value);
+
+                    if(isNaN(input_number)){
+                        alert("Please enter a number.")
+                    }else if( input_number < 10){
+                        alert("Number smaller than 10.")
+                    }else{
+                        alert("Number is greater than 10.")
+                    }
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>
